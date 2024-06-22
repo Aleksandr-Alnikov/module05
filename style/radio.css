@@ -1,0 +1,51 @@
+#black, #white {
+    display: none;
+}
+
+.label__black:before {
+    position: absolute;
+    right: 10px;
+    border-radius: 10px;
+    top: 10px;
+    padding: 10px;
+    content: "Black";
+    color: var(--my-purple);
+    display: block;
+    cursor: pointer;
+}
+
+.label__white:before {
+    position: absolute;
+    padding: 10px;
+    content: "White";
+    color: var(--my-purple);
+    display: block;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+}
+
+input[type='radio'][id='black']:checked + .label__black:before {
+    background-color: var(--my-yellow);
+    box-shadow: 10px 10px 25px var(--my-grey);
+}
+
+input[type='radio'][id='white']:checked + .label__white:before {
+    background-color: var(--my-yellow);
+    box-shadow: 10px 10px 25px var(--my-grey);
+}
+
+input[type='radio'][id='black']:checked ~ .form {
+    background-color: var(--my-black);
+    color: var(--my-white);
+}
+
+input[type='radio'][id='white']:checked ~ .form{
+    background-color: var(--my-white);
+    color: var(--my-black);
+}
+
+input[type='radio'][id='black']:checked ~ .form > a:active {
+    box-shadow: 0 0 0 var(--my-grey);
+}

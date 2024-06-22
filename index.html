@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preload" href="fonts/courier-prime-v9-latin-regular.woff2" type="font/woff2" as="font" crossorigin="">
+    <link rel="preload" href="fonts/courier-prime-v9-latin-700.woff2" type="font/woff2" as="font" crossorigin="">
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+
+<div class="container form__container">
+    <input id="black" type="radio" name="theme" value="black">
+    <label for="black" class="label__black"></label>
+    <input id="white" type="radio" name="theme" value="white" checked>
+    <label for="white" class="label__white"></label>
+    <form class="form" action="#" method="post">
+        <fieldset class="form__field">
+            <legend>Контакты</legend>
+            <fieldset>
+                <label>
+                    Имя
+                    <input class="input" type="text">
+                </label>
+                <label>
+                    Фамилия
+                    <input type="text">
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    Телефон
+                    <input type="tel" title="+7___-___-__-__" pattern="\+[7]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">
+                </label>
+                <label>
+                    E-mail
+                    <input type="email">
+                </label>
+            </fieldset>
+        </fieldset>
+        <a class="form__btn" type="submit">Отправить</a>
+    </form>
+</div>
+</body>
+</html>
