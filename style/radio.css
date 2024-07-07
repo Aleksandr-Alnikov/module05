@@ -14,6 +14,8 @@
     cursor: pointer;
 }
 
+
+
 .label__white:before {
     position: absolute;
     padding: 10px;
@@ -24,6 +26,14 @@
     top: 10px;
     left: 10px;
     border-radius: 10px;
+}
+
+.btn:focus:before {
+    border: 1px solid var(--my-purple);
+}
+
+.form__btn:focus {
+    border: 1px solid var(--my-purple);
 }
 
 input[type='radio'][id='black']:checked + .label__black:before {
@@ -39,6 +49,10 @@ input[type='radio'][id='white']:checked + .label__white:before {
 input[type='radio'][id='black']:checked ~ .form {
     background-color: var(--my-black);
     color: var(--my-white);
+}
+
+input[type='radio'][id='black']:checked, input {
+    color: var(--my-yellow);
 }
 
 input[type='radio'][id='white']:checked ~ .form{

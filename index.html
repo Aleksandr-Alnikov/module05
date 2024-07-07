@@ -14,9 +14,9 @@
 
 <div class="container form__container">
     <input id="black" type="radio" name="theme" value="black">
-    <label for="black" class="label__black"></label>
-    <input id="white" type="radio" name="theme" value="white" checked>
-    <label for="white" class="label__white"></label>
+    <label tabindex="2" for="black" class="label__black btn"></label>
+    <input  id="white" type="radio" name="theme" value="white" checked>
+    <label tabindex="1" for="white" class="label__white btn"></label>
     <form class="form" action="#" method="post">
         <fieldset class="form__field">
             <legend>Контакты</legend>
@@ -41,7 +41,7 @@
                 </label>
             </fieldset>
         </fieldset>
-        <a class="form__btn" type="submit">Отправить</a>
+        <a tabindex="0" class="form__btn" type="submit">Отправить</a>
     </form>
 </div>
 </body>
